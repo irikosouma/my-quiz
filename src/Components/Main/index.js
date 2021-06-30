@@ -23,7 +23,6 @@ export default function MainComponent() {
         .then(response => response.json())
         .then(json => {
             setList(json.results)
-            // console.log('success', json.results)
             if(json.results.length === 0) {
                 setIsOpen(false)
                 setIsError(true)
